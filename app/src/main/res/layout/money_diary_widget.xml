@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:padding="@dimen/widget_margin"
+        android:background="@drawable/widget_background"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:padding="4dp"
+            android:contentDescription="@string/cd_app_icon"/>
+
+        <LinearLayout
+            android:id="@+id/expense_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:background="@drawable/ic_expense"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="2dp"
+                android:contentDescription="@string/cd_add_expense"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/monthly_expense"
+                android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/left_border"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/income_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:background="@drawable/ic_income"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="2dp"
+            android:contentDescription="@string/cd_add_income"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/monthly_income"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/left_border"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/transfer_layout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:background="@drawable/ic_transfer"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="2dp"
+            android:contentDescription="@string/cd_add_transfer"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/tab_transfer"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

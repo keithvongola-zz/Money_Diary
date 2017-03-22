@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="currency"
+        android:title="Default Currency">
+
+        <Preference
+            android:key="main_currency"
+            android:title="Currency"
+            android:summary="Summary" />
+
+        <Preference
+            android:key="exchange_rate"
+            android:title="Exchange Rate"
+            android:summary="" />
+
+        <Preference
+            android:key="decimal_place"
+            android:title="Decimal Place"
+            android:summary="" />
+    </PreferenceCategory>
+</PreferenceScreen>

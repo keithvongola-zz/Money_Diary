@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02C8A7</color>
+    <color name="colorPrimaryDark">#01a085</color>
+    <color name="colorAccent">#F53240</color>
+    <color name="colorTeal100">#B2DFDB</color>
+
+    <color name="colorRed">#FF5252</color>
+    <color name="colorRedDark">#CC4141</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrey100">#EEEEEE</color>
+    <color name="colorGrey300">#E0E0E0</color>
+    <color name="colorGrey400">#BDBDBD</color>
+    <color name="colorGrey900">#212121</color>
+    <color name="colorAmber100">#FFECB3</color>
+    <color name="colorAmber200">#FFE082</color>
+    <color name="colorAmber300">#FFD54F</color>
+    <color name="colorAmber400">#FFCA28</color>
+
+    <color name="colorHomeBgDark">#C79801</color>
+    <color name="colorBlue300">#64B5F6</color>
+    <color name="colorBlue400">#42A5F5</color>
+    <color name="wheelCurtainColor">#66FFEB3B</color>
+</resources>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorAmber400"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:elevation="2dp"
+            android:baselineAligned="false">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:columnCount="2"
+                android:stretchMode="columnWidth">
+
+                <TextView
+                    app:layout_columnSpan="2"
+                    android:id="@+id/current_month_text"
+                    android:textSize="@dimen/text_date_size"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="@string/monthly_expense"
+                    android:textSize="@dimen/text_title_size"
+                    app:layout_gravity="bottom" />
+
+                <TextView
+                    android:id="@+id/income_amount"
+                    style="@style/HomeInfoAmount"
+                    app:layout_columnWeight="1" />
+
+                <TextView
+                    android:text="@string/monthly_income"
+                    android:textSize="@dimen/text_title_size"
+                    app:layout_gravity="bottom" />
+
+                <TextView
+                    android:id="@+id/expense_amount"
+                    style="@style/HomeInfoAmount"
+                    app:layout_columnWeight="1" />
+
+                <TextView
+                    app:layout_gravity="bottom"
+                    android:textSize="@dimen/text_title_size"
+                    android:text="@string/monthly_budget" />
+
+                <TextView
+                    android:id="@+id/budget_left_amount"
+                    style="@style/HomeInfoAmount"
+                    app:layout_columnWeight="1" />
+
+            </android.support.v7.widget.GridLayout>
+
+            <me.itangqi.waveloadingview.WaveLoadingView
+                android:id="@+id/waveProgressView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                app:wlv_borderColor="@color/colorPrimary"
+                app:wlv_borderWidth="2dp"
+                app:wlv_progressValue="40"
+                app:wlv_shapeType="circle"
+                app:wlv_round_rectangle="true"
+                app:wlv_triangle_direction="north"
+                app:wlv_titleCenterStrokeColor="@color/colorPrimary"
+                app:wlv_titleCenterStrokeWidth="3dp"
+                app:wlv_titleCenter="50%"
+                app:wlv_titleCenterColor="@android:color/white"
+                app:wlv_titleCenterSize="12sp"
+                app:wlv_titleBottom="@string/progress_bar_title"
+                app:wlv_titleBottomSize="10sp"
+                app:wlv_titleBottomColor="@android:color/white"
+                app:wlv_titleBottomStrokeWidth="3dp"
+                app:wlv_titleBottomStrokeColor="@color/colorPrimary"
+                app:wlv_waveAmplitude="10"
+                app:wlv_waveColor="@color/colorPrimary"
+                app:wlv_wave_background_Color="@color/colorGrey100" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/overview_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAmber200"
+                android:text="@string/title_overview"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingEnd="@dimen/activity_vertical_margin"
+                android:elevation="2dp"
+                android:textSize="@dimen/text_title_size" />
+
+            <LinearLayout
+                android:id="@+id/chart_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:paddingStart="@dimen/activity_vertical_margin"
+                android:paddingEnd="@dimen/activity_vertical_margin">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/line_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart = "@dimen/activity_vertical_margin"
+                android:paddingEnd = "@dimen/activity_vertical_margin"
+                android:background="@color/colorWhite"
+                app:columnCount="3">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center_vertical"
+                    android:src="@drawable/legend_square"
+                    android:tint="@color/colorRed"
+                    android:contentDescription="@string/monthly_expense" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_columnSpan="1"
+                    android:text="@string/monthly_expense"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/expense_legend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:gravity="end"
+                    android:text="@string/hint_empty" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center_vertical"
+                    android:src="@drawable/legend_square"
+                    android:tint="@color/colorPrimary"
+                    android:contentDescription="@string/monthly_income" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monthly_income"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="8dp"/>
+                <TextView
+                    android:id="@+id/income_legend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:gravity="end"
+                    android:text="@string/hint_empty" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_gravity="center_vertical"
+                    android:src="@drawable/legend_square"
+                    android:tint="@color/colorAmber400"
+                    android:contentDescription="@string/tab_saving" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/tab_saving"/>
+
+                <TextView
+                    android:id="@+id/saving_legend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:gravity="end"
+                    android:text="@string/hint_empty" />
+            </android.support.v7.widget.GridLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/overlay_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        fab:fab_colorNormal="@color/colorAmber400"
+        fab:fab_addButtonColorNormal="@color/colorPrimary"
+        fab:fab_addButtonColorPressed="@color/colorPrimaryDark"
+        fab:fab_addButtonPlusIconColor="@color/colorWhite"
+        fab:fab_addButtonStrokeVisible="false"
+        fab:fab_labelsPosition="left"
+        fab:fab_labelStyle="@style/menu_labels_style">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorRed"
+            fab:fab_colorPressed="@color/colorRedDark"
+            fab:fab_icon="@drawable/ic_expense"
+            fab:fab_size="normal"
+            fab:fab_title="@string/fab_add_expense" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimary"
+            fab:fab_colorPressed="@color/colorPrimaryDark"
+            fab:fab_plusIconColor="@color/colorAmber400"
+            fab:fab_icon="@drawable/ic_income"
+            fab:fab_size="normal"
+            fab:fab_title="@string/fab_add_income" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorAmber400"
+            fab:fab_colorPressed="@color/colorHomeBgDark"
+            fab:fab_icon="@drawable/ic_transfer"
+            fab:fab_size="normal"
+            fab:fab_title="@string/fab_add_transfer" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_saving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorBlue300"
+            fab:fab_colorPressed="@color/colorBlue400"
+            fab:fab_icon="@drawable/ic_saving"
+            fab:fab_size="normal"
+            fab:fab_title="@string/fab_add_saving" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</FrameLayout>

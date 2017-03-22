@@ -1,0 +1,8 @@
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="@dimen/widget_default_width"
+    android:minHeight="@dimen/widget_default_height"
+    android:updatePeriodMillis="3600"
+    android:initialLayout="@layout/money_diary_widget"
+    android:resizeMode="none"
+    />

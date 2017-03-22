@@ -1,0 +1,119 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/plans_edit_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:id="@+id/plan_name_container"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            style="@style/TextInputContainer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_name"
+                style="@style/ListItemText" />
+
+            <EditText
+                android:id="@+id/et_plan_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:background="@android:color/transparent"
+                android:imeOptions="actionDone"
+                android:lines="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plan_target_container"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            style="@style/TextInputContainer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_target_amount"
+                style="@style/ListItemText" />
+
+            <EditText
+                android:id="@+id/et_plan_target"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:cursorVisible="false"
+                android:duplicateParentState="true"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plan_start_date_container"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:focusable="false"
+            style="@style/TextInputContainer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_start_date"
+                style="@style/ListItemText" />
+
+            <EditText
+                android:id="@+id/et_plan_start_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:background="@android:color/transparent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/plan_terms_container"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            style="@style/TextInputContainer">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_terms"
+                style="@style/ListItemText" />
+
+            <EditText
+                android:id="@+id/et_plan_terms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|end"
+                android:background="@android:color/transparent"
+                android:lines="1"
+                android:imeOptions="actionDone" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/plan_grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+</FrameLayout>

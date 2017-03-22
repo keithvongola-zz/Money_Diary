@@ -1,0 +1,81 @@
+package com.keithvongola.android.moneydiary.adapter;
+
+import android.support.v7.widget.RecyclerView;
+
+import com.daimajia.swipe.SwipeLayout;
+import com.daimajia.swipe.adapters.RecyclerSwipeAdapter;
+
+public abstract class BackableSwipeAdapter<VH extends RecyclerView.ViewHolder> extends RecyclerSwipeAdapter<VH> {
+    private boolean showEdit = false;
+    private boolean showDelete = false;
+    private SwipeLayout currentExpandedSwipeLayout;
+
+    /**
+     * Set to true when edit button in actionbar is selected, else false
+     */
+    public void setEditBtn(boolean isShow) {
+        showEdit = isShow;
+        notifyDataSetChanged();
+    }
+
+    /**
+     * Set to true when delete button in actionbar is selected, else false
+     */
+    public void setDeleteBtn(boolean isShow) {
+        showDelete = isShow;
+        notifyDataSetChanged();
+    }
+
+
+    /**
+     * @return {@code True} if edit button in {@code SwipeLayout} is visible else {@code false}
+     */
+    public boolean getEditBtn() {
+        return showEdit;
+    }
+
+    /**
+     * @return {@code True} if delete button in {@code SwipeLayout} is visible else {@code false}
+     */
+    public boolean getDeleteBtn() {
+        return showDelete;
+    }
+
+    /**
+     * Set {@code showDelete} and {@code showEdit} to default value, {@code false}.
+     * Notify any registered observers that the data set has changed.
+     */
+    public void resetEditAndDelete() {
+        showDelete = false;
+        showEdit = false;
+        notifyDataSetChanged();
+    }
+
+
+    /**
+     * Returns false if either edit or delete button is currently visible, else returns true.
+     *
+     * @return
+     */
+    public boolean getSwipeStatus() {
+        if (showEdit | showDelete){
+            resetEditAndDelete();
+            return false;
+        }
+
+        if (currentExpandedSwipeLayout != null) {
+            currentExpandedSwipeLayout.close();
+            return false;
+        }
+        return true;
+    }
+
+    public void setCurrentExpandedSwipeLayout(SwipeLayout currentExpandedSwipeLayout) {
+        this.currentExpandedSwipeLayout = currentExpandedSwipeLayout;
+    }
+
+    public SwipeLayout getCurrentExpandedSwipeLayout() {
+        return currentExpandedSwipeLayout;
+    }
+
+}

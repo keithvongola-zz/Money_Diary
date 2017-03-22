@@ -1,0 +1,509 @@
+<resources>
+    <string name="app_name" translatable="false">Money Diary</string>
+    <string name="content_authority" translatable="false">com.keithvongola.android.moneydiary</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_done">Done</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_add_account">Add account</string>
+    <string name="action_add_budget">Add budget</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="to" translatable="false">~</string>
+
+    <!--Preference-->
+    <string name="pref_group_currency" translatable="false">currency</string>
+    <string name="pref_main_currency_key" translatable="false">main_currency</string>
+    <string name="pref_main_currency_default" translatable="false">HKD</string>
+    <string name="pref_service_status_key" translatable="false">service-status</string>
+    <string name="pref_exchange_rate_key" translatable="false">exchange_rate</string>
+    <string name="pref_decimal_place_key" translatable="false">decimal_place</string>
+    <string name="pref_decimal_place_default" translatable="false">2</string>
+
+    <!--Home Page-->
+    <string name="title_home">Home</string>
+    <string name="monthly_income">Income</string>
+    <string name="monthly_expense">Expense</string>
+    <string name="monthly_budget">Budget left</string>
+    <string name="progress_bar_title">Budget Left</string>
+    <string name="title_overview">Overview</string>
+
+    <!--Accounts Page-->
+    <string name="title_accounts">Accounts</string>
+    <string name="account_current_title">Current :</string>
+    <string name="account_long_term_saving">Saving :</string>
+    <string name="account_long_term_instalment">Instalment :</string>
+    <string name="account_banking">Banking</string>
+    <string name="account_credit_cards">Credit Cards</string>
+    <string name="account_stocks_funds">Stocks/Funds</string>
+    <string name="account_debts">Debts</string>
+    <string name="account_claims">Claims</string>
+    <string name="account_others">Others</string>
+
+    <!--Edit Account Page-->
+    <string name="title_edit_account">Edit Account</string>
+    <string name="title_new_account">New Account</string>
+    <string name="edit_name">Name</string>
+    <string name="edit_type">Type</string>
+    <string name="edit_balance">Balance</string>
+    <string name="edit_currency">Currency</string>
+    <string name="edit_institution">Institution</string>
+    <string name="edit_exchange_rate">Exchange rate</string>
+
+    <string name="account_enter_name">Enter Name</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="hint_optional">Optional</string>
+    <string name="toast_empty_account_name">Please enter account name.</string>
+    <string name="toast_account_balance_invalid">Balance must be numbers.</string>
+    <string name="empty_account">No account is found.\n\n Click to add an account.</string>
+
+    <!--Budgets Page-->
+    <string name="title_budgets">Budgets</string>
+    <string name="title_sub_budgets">Sub-budgets</string>
+    <string name="title_remain"><u>Remain</u></string>
+    <string name="title_spent"><u>Spent</u></string>
+    <string name="title_received"><u>Received</u></string>
+    <string name="title_budget_expense">Budget Expense</string>
+    <string name="title_budget_income">Budget Income</string>
+    <string name="empty_budgets">No budget is found.\n\n Click to add a budget.</string>
+    <string name="current_budget">Budget : </string>
+    <string name="budget_title_remain">"Remain : "</string>
+    <string name="budget_title_received">"Received : "</string>
+
+    <!--Edit Budget Page-->
+    <string name="title_new_budget">New Budget</string>
+    <string name="title_edit_budget">Edit Budget</string>
+    <string name="toast_empty_budget_name">Please enter budget name.</string>
+    <string name="toast_budget_amount_zero_or_negative">Budget amount cannot be zero or negative.</string>
+    <string name="toast_budget_amount_invalid">Amount must be numbers.</string>
+    <string name="toast_empty_icon">Please select an icon.</string>
+
+    <!--Plans Page-->
+    <string name="title_plans">Plans</string>
+    <string name="edit_target_amount">Target Amount</string>
+    <string name="edit_start_date">Start date</string>
+    <string name="edit_terms">Terms (Months)</string>
+    <string name="plans_pager_title_in_progress">In Progress</string>
+    <string name="plans_pager_title_completed">Completed</string>
+
+    <!--Plan Edit Page-->
+    <string name="title_edit_plan">Edit Plan</string>
+    <string name="title_new_plan">New Plan</string>
+    <string name="title_current_month">Current month</string>
+    <string name="plan_title_balance">Balance :</string>
+    <string name="plan_title_target">Target :</string>
+    <string name="plan_title_monthly_contribution">Monthly Contribution :</string>
+    <string name="plan_title_current_terms">Current Terms:</string>
+    <string name="toast_empty_plan_name">Please enter a plan name.</string>
+    <string name="toast_plan_terms_zero_or_negative">Terms cannot be zero or negative.</string>
+    <string name="toast_plan_terms_invalid">Terms must be numbers and greater than 1.</string>
+    <string name="toast_plan_amount_invalid">Amount must be numbers.</string>
+
+    <!--Sub Plan Page-->
+    <string name="title_sub_plans">Sub Plans</string>
+
+    <!--Transaction Page-->
+    <string name="title_transaction">TransactionActivity</string>
+    <string name="title_edit_expense">Edit Expense</string>
+    <string name="title_edit_income">Edit Income</string>
+    <string name="title_edit_transfer">Edit Transfer</string>
+    <string name="title_edit_saving">Edit Saving</string>
+    <string name="expense">Expense</string>
+    <string name="tab_income">Income</string>
+    <string name="tab_transfer">Transfer</string>
+    <string name="tab_saving">Saving</string>
+    <string name="transaction_amount">Amount</string>
+    <string name="transaction_account">Account</string>
+    <string name="transaction_category">Category</string>
+    <string name="transaction_plan">Plans</string>
+    <string name="transaction_date">Date</string>
+    <string name="transaction_place">Place</string>
+    <string name="transaction_notes">Notes</string>
+    <string name="swipe_transaction_records">transaction records</string>
+    <string name="transactions_new">New Transaction</string>
+    <string name="btn_discard">Discard</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_save_and_new">Save + New</string>
+    <string name="btn_delete">Delete</string>
+    <string name="toast_transaction_amount_invalid">Amount must be numbers.</string>
+    <string name="toast_transaction_amount_zero">Amount must be greater than zero.</string>
+    <string name="toast_transaction_empty_category">Please select a Sub-Category.</string>
+    <string name="toast_transaction_empty_account">Please add an account for transaction.</string>
+
+    <!--Records Page-->
+    <string name="title_records">Records</string>
+    <string name="group_income_title">Income : </string>
+    <string name="group_expense_title">Expense :</string>
+    <string name="empty_record">No plan is found.\n \nClick to add a plan.</string>
+
+    <string name="day_of_week_1">SUN</string>
+    <string name="day_of_week_2">MON</string>
+    <string name="day_of_week_3">TUE</string>
+    <string name="day_of_week_4">WED</string>
+    <string name="day_of_week_5">THU</string>
+    <string name="day_of_week_6">FRI</string>
+    <string name="day_of_week_7">SAT</string>
+
+    <!--Setting Page-->
+    <string name="title_setting">Settings</string>
+
+    <!--Tool bar information-->
+    <string name="toolbar_info_total_balance">Total Balance</string>
+    <string name="toolbar_info_balance">Balance</string>
+    <string name="toolbar_info_current">Current</string>
+    <string name="toolbar_info_long_terms">Long terms</string>
+    <string name="toolbar_info_assets"><u>Assets</u></string>
+    <string name="toolbar_info_liabilities"><u>Liabilities</u></string>
+    <string name="toolbar_info_income"><u>Income</u></string>
+    <string name="toolbar_info_expense"><u>Expense</u></string>
+
+    <!--Reports Page-->
+    <string name="title_reports">Reports</string>
+    <string name="reports_select_chart">Select a category.</string>
+
+    <!--Currency Page-->
+    <string name="title_currency">Select Currency</string>
+
+    <!--Exchange Rate Detail Page-->
+    <string name="toast_ex_rate_zero_or_negative">Exchange rate value cannot be zero or negative.</string>
+    <string name="toast_ex_rate_empty">Exchange rate value cannot be empty.</string>
+    <string name="exchange_rate_manual">Manual exchange rate</string>
+    <string name="hint_empty" translatable="false">" - "</string>
+
+    <!--Refresh Header-->
+    <string name="refresh_release">Release to view \n</string>
+    <string name="refresh_swipe">Swipe to view \n</string>
+    <string name="refresh_complete">Complete</string>
+    <string name="refresh_refresh">Loading…</string>
+
+    <!--Load More Footer-->
+    <string name="load_more_release">Release to view \n</string>
+    <string name="load_more_swipe">Swipe to view \n</string>
+    <string name="load_more_complete">Complete</string>
+    <string name="load_more_refresh">Loading…</string>
+
+    <!--Dialog-->
+    <string name="dialog_confirm_delete_account">All transactions under this account will be deleted. Are you sure?</string>
+    <string name="dialog_delete_account_title">Delete Account</string>
+    <string name="dialog_delete_account_transactions">Delete \n transactions</string>
+    <string name="dialog_keep_transactions">Keep \n transactions</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <!--PopupWindow-->
+    <string name="pw_empty_account">No account is found.</string>
+    <string name="pw_empty_budget">No budget is found.</string>
+    <string name="pw_empty_record">No transaction records found.</string>
+    <string name="pw_title_account">Select Account</string>
+    <string name="pw_title_plan">Select Plan</string>
+    <string name="pw_title_calculator">Enter Amount</string>
+    <string name="pw_title_category">Select Category</string>
+    <string name="pw_title_date">Select Date</string>
+    <string name="submit_btn">Submit</string>
+    <string name="cancel_btn">Cancel</string>
+
+    <!--Fab button-->
+    <string name="fab_add_expense">Add Expense</string>
+    <string name="fab_add_income">Add Income</string>
+    <string name="fab_add_transfer">Add Transfer</string>
+    <string name="fab_add_saving">Add Saving</string>
+
+    <!--Content description-->
+    <string name="cd_icon_of_budget">Icon of budget.</string>
+    <string name="cd_edit_account">Edit account.</string>
+    <string name="cd_delete_account">Delete account.</string>
+    <string name="cd_edit_budget">Edit budget.</string>
+    <string name="cd_delete_budget">Delete budget.</string>
+    <string name="cd_flag">Country Flag.</string>
+    <string name="cd_edit_plan">Edit plan.</string>
+    <string name="cd_delete_plan">Delete plan.</string>
+    <string name="cd_edit_transaction">Edit transaction.</string>
+    <string name="cd_delete_transaction">Delete transaction.</string>
+    <string name="cd_app_icon">Start money diary.</string>
+    <string name="cd_add_expense">Add expense.</string>
+    <string name="cd_add_income">Add income.</string>
+    <string name="cd_add_transfer">Add transfer.</string>
+    <string name="cd_records_next">Next record.</string>
+    <string name="cd_records_previous">Previous record.</string>
+
+    <!--Sample accounts-->
+    <string name="account_cash">Cash</string>
+    <string name="account_checking">Checking</string>
+    <string name="account_saving">Savings</string>
+    <string name="accounts_visa">Visa</string>
+
+    <!--Main budget items-->
+    <string name="main_budget_food">Food</string>
+    <string name="main_budget_clothing">Clothing</string>
+    <string name="main_budget_transportation">Transportation</string>
+    <string name="main_budget_entertainment">Entertainment</string>
+    <string name="main_budget_personal_care">Personal Care</string>
+    <string name="main_budget_home">Home</string>
+    <string name="main_budget_utilities">Utilities</string>
+    <string name="main_budget_medicare">Medicare</string>
+    <string name="main_budget_miscellaneous">Miscellaneous</string>
+    <string name="main_budget_insurance">Insurance</string>
+    <string name="main_budget_payments">Payments</string>
+    <string name="main_budget_jobs">Job</string>
+    <string name="main_budget_others">Others</string>
+
+    <!--Sub budget items-->
+    <string name="sub_budget_restaurants">Restaurants</string>
+    <string name="sub_budget_snacks">Snacks</string>
+    <string name="sub_budget_beverage">Beverage</string>
+    <string name="sub_budget_groceries">Groceries</string>
+    <string name="sub_budget_shirts">Shirts</string>
+    <string name="sub_budget_pants">Pants</string>
+    <string name="sub_budget_skirts">Skirts</string>
+    <string name="sub_budget_shoes">Shoes</string>
+    <string name="sub_budget_jewelry">Jewelry</string>
+    <string name="sub_budget_watches">Watches</string>
+    <string name="sub_budget_accessories">Accessories</string>
+    <string name="sub_budget_public_transport">Public Transport</string>
+    <string name="sub_budget_car_loan">Car Loan</string>
+    <string name="sub_budget_gasoline">Gasoline</string>
+    <string name="sub_budget_car_insurance">Car Insurance</string>
+    <string name="sub_budget_hobbies">Hobbies</string>
+    <string name="sub_budget_gathering">Gathering</string>
+    <string name="sub_budget_vacations">Vacations</string>
+    <string name="sub_budget_cosmetics">Cosmetics</string>
+    <string name="sub_budget_rent">Rent</string>
+    <string name="sub_budget_maintenance">Maintenance</string>
+    <string name="sub_budget_improvements">Improvements</string>
+    <string name="sub_budget_management_fee">Management Fee</string>
+    <string name="sub_budget_electricity">Electricity</string>
+    <string name="sub_budget_water">Water</string>
+    <string name="sub_budget_natural_gas">Natural Gas</string>
+    <string name="sub_budget_tel_data">Telephone/Data</string>
+    <string name="sub_budget_internet">Internet</string>
+    <string name="sub_budget_fitness">Fitness</string>
+    <string name="sub_budget_health_food">Health Food</string>
+    <string name="sub_budget_medicine">Medicine</string>
+    <string name="sub_budget_treatment">Treatment</string>
+    <string name="sub_budget_dedication">Dedication</string>
+    <string name="sub_budget_donation">Donation</string>
+    <string name="sub_budget_gift">Gift</string>
+    <string name="sub_budget_health_insurance">Health Insurance</string>
+    <string name="sub_budget_accident_insurance">Accident Insurance</string>
+    <string name="sub_budget_life_insurance">Life Insurance</string>
+    <string name="sub_budget_installment">Installment</string>
+    <string name="sub_budget_student_loan">Student Loan</string>
+    <string name="sub_budget_credit_card">Credit Card</string>
+    <string name="sub_budget_investment_loss">Investment Loss</string>
+    <string name="sub_budget_accidental_loss">Accidental Loss</string>
+    <string name="sub_budget_salary">Salary</string>
+    <string name="sub_budget_overtime">Overtime</string>
+    <string name="sub_budget_bonus">Bonus</string>
+    <string name="sub_budget_investment">Investment</string>
+    <string name="sub_plan_deposit">Deposit</string>
+    <string name="sub_plan_furniture">Furniture</string>
+    <string name="sub_plan_property_taxes">Property taxes</string>
+    <string name="sub_plan_insurance">Insurance</string>
+
+    <string-array name="days_array">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+
+    <string-array name="months_array">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="legend_title_array">
+        <item>Expense</item>
+        <item>Income</item>
+        <item>Saving</item>
+    </string-array>
+
+    <integer-array name="line_color_array">
+        <item>@color/colorRed</item>
+        <item>@color/colorPrimary</item>
+        <item>@color/colorAmber400</item>
+    </integer-array>
+
+    <string-array name="records_period_array">
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <!--Name of currency-->
+    <string name="AED">UAE Dirham</string>
+    <string name="AFN">Afghani</string>
+    <string name="ALL">Lek</string>
+    <string name="AMD">Armenian Dram</string>
+    <string name="ANG">Netherlands Antillean Guilder</string>
+    <string name="AOA">Kwanza</string>
+    <string name="ARS">Argentine Peso</string>
+    <string name="AUD">Australian Dollar</string>
+    <string name="AWG">Aruban Florin</string>
+    <string name="AZN">Azerbaijanian Manat</string>
+    <string name="BAM">Convertible Mark</string>
+    <string name="BBD">Barbados Dollar</string>
+    <string name="BDT">Taka</string>
+    <string name="BGN">Bulgarian Lev</string>
+    <string name="BHD">Bahraini Dinar</string>
+    <string name="BIF">Burundi Franc</string>
+    <string name="BMD">Bermudian Dollar</string>
+    <string name="BND">Brunei Dollar</string>
+    <string name="BOB">Boliviano</string>
+    <string name="BOV">Mvdol</string>
+    <string name="BRL">Brazilian Real</string>
+    <string name="BSD">Bahamian Dollar</string>
+    <string name="BTN">Ngultrum</string>
+    <string name="BWP">Pula</string>
+    <string name="BYN">Belarusian Ruble</string>
+    <string name="BZD">Belize Dollar</string>
+    <string name="CAD">Canadian Dollar</string>
+    <string name="CDF">Congolese Franc</string>
+    <string name="CHF">Swiss Franc</string>
+    <string name="CLF">Unidad de Fomento</string>
+    <string name="CLP">Chilean Peso</string>
+    <string name="CNY">Yuan Renminbi</string>
+    <string name="COP">Colombian Peso</string>
+    <string name="COU">Unidad de Valor Real</string>
+    <string name="CRC">Costa Rican Colon</string>
+    <string name="CUC">Peso Convertible</string>
+    <string name="CUP">Cuban Peso</string>
+    <string name="CVE">Cabo Verde Escudo</string>
+    <string name="CZK">Czech Koruna</string>
+    <string name="DJF">Djibouti Franc</string>
+    <string name="DKK">Danish Krone</string>
+    <string name="DOP">Dominican Peso</string>
+    <string name="DZD">Algerian Dinar</string>
+    <string name="EGP">Egyptian Pound</string>
+    <string name="ERN">Nakfa</string>
+    <string name="ETB">Ethiopian Birr</string>
+    <string name="EUR">Euro</string>
+    <string name="FJD">Fiji Dollar</string>
+    <string name="FKP">Falkland Islands Pound</string>
+    <string name="GBP">Pound Sterling</string>
+    <string name="GEL">Lari</string>
+    <string name="GHS">Ghana Cedi</string>
+    <string name="GIP">Gibraltar Pound</string>
+    <string name="GMD">Dalasi</string>
+    <string name="GNF">Guinea Franc</string>
+    <string name="GTQ">Quetzal</string>
+    <string name="GYD">Guyana Dollar</string>
+    <string name="HKD">Hong Kong Dollar</string>
+    <string name="HNL">Lempira</string>
+    <string name="HRK">Kuna</string>
+    <string name="HTG">Gourde</string>
+    <string name="HUF">Forint</string>
+    <string name="IDR">Rupiah</string>
+    <string name="ILS">New Israeli Sheqel</string>
+    <string name="INR">Indian Rupee</string>
+    <string name="IQD">Iraqi Dinar</string>
+    <string name="IRR">Iranian Rial</string>
+    <string name="ISK">Iceland Krona</string>
+    <string name="JMD">Jamaican Dollar</string>
+    <string name="JOD">Jordanian Dinar</string>
+    <string name="JPY">Yen</string>
+    <string name="KES">Kenyan Shilling</string>
+    <string name="KGS">Som</string>
+    <string name="KHR">Riel</string>
+    <string name="KMF">Comoro Franc</string>
+    <string name="KPW">North Korean Won</string>
+    <string name="KRW">Won</string>
+    <string name="KWD">Kuwaiti Dinar</string>
+    <string name="KYD">Cayman Islands Dollar</string>
+    <string name="KZT">Tenge</string>
+    <string name="LAK">Kip</string>
+    <string name="LBP">Lebanese Pound</string>
+    <string name="LKR">Sri Lanka Rupee</string>
+    <string name="LRD">Liberian Dollar</string>
+    <string name="LSL">Loti</string>
+    <string name="LYD">Libyan Dinar</string>
+    <string name="MAD">Moroccan Dirham</string>
+    <string name="MDL">Moldovan Leu</string>
+    <string name="MGA">Malagasy Ariary</string>
+    <string name="MKD">Denar</string>
+    <string name="MMK">Kyat</string>
+    <string name="MNT">Tugrik</string>
+    <string name="MOP">Pataca</string>
+    <string name="MRO">Ouguiya</string>
+    <string name="MUR">Mauritius Rupee</string>
+    <string name="MVR">Rufiyaa</string>
+    <string name="MWK">Malawi Kwacha</string>
+    <string name="MXN">Mexican Peso</string>
+    <string name="MXV">Mexican Unidad de Inversion (UDI)</string>
+    <string name="MYR">Malaysian Ringgit</string>
+    <string name="MZN">Mozambique Metical</string>
+    <string name="NAD">Namibia Dollar</string>
+    <string name="NGN">Naira</string>
+    <string name="NIO">Cordoba Oro</string>
+    <string name="NOK">Norwegian Krone</string>
+    <string name="NPR">Nepalese Rupee</string>
+    <string name="NZD">New Zealand Dollar</string>
+    <string name="OMR">Rial Omani</string>
+    <string name="PAB">Balboa</string>
+    <string name="PEN">Sol</string>
+    <string name="PGK">Kina</string>
+    <string name="PHP">Philippine Peso</string>
+    <string name="PKR">Pakistan Rupee</string>
+    <string name="PLN">Zloty</string>
+    <string name="PYG">Guarani</string>
+    <string name="QAR">Qatari Rial</string>
+    <string name="RON">Romanian Leu</string>
+    <string name="RSD">Serbian Dinar</string>
+    <string name="RUB">Russian Ruble</string>
+    <string name="RWF">Rwanda Franc</string>
+    <string name="SAR">Saudi Riyal</string>
+    <string name="SBD">Solomon Islands Dollar</string>
+    <string name="SCR">Seychelles Rupee</string>
+    <string name="SDG">Sudanese Pound</string>
+    <string name="SEK">Swedish Krona</string>
+    <string name="SGD">Singapore Dollar</string>
+    <string name="SHP">Saint Helena Pound</string>
+    <string name="SLL">Leone</string>
+    <string name="SOS">Somali Shilling</string>
+    <string name="SRD">Surinam Dollar</string>
+    <string name="SSP">South Sudanese Pound</string>
+    <string name="STD">Dobra</string>
+    <string name="SVC">El Salvador Colon</string>
+    <string name="SYP">Syrian Pound</string>
+    <string name="SZL">Lilangeni</string>
+    <string name="THB">Baht</string>
+    <string name="TJS">Somoni</string>
+    <string name="TMT">Turkmenistan New Manat</string>
+    <string name="TND">Tunisian Dinar</string>
+    <string name="TOP">Paanga</string>
+    <string name="TRY">Turkish Lira</string>
+    <string name="TTD">Trinidad and Tobago Dollar</string>
+    <string name="TWD">New Taiwan Dollar</string>
+    <string name="TZS">Tanzanian Shilling</string>
+    <string name="UAH">Hryvnia</string>
+    <string name="UGX">Uganda Shilling</string>
+    <string name="USD">US Dollar</string>
+    <string name="UYI">Uruguay Peso en Unidades Indexadas (URUIURUI)</string>
+    <string name="UYU">Peso Uruguayo</string>
+    <string name="UZS">Uzbekistan Sum</string>
+    <string name="VEF">Bolivar</string>
+    <string name="VND">Dong</string>
+    <string name="VUV">Vatu</string>
+    <string name="WST">Tala</string>
+    <string name="XAF">CFA Franc BEAC</string>
+    <string name="YER">Yemeni Rial</string>
+    <string name="ZAR">Rand</string>
+    <string name="ZMW">Zambian Kwacha</string>
+    <string name="ZWL">Zimbabwe Dollar</string>
+</resources>

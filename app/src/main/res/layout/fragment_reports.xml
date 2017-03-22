@@ -1,0 +1,105 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/reports_date_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:background="@color/colorAmber300">
+
+            <ImageButton
+                android:id="@+id/reports_previous_btn"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|start"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_arrow_left"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/cd_add_transfer" />
+
+            <TextView
+                android:id="@+id/reports_date_start"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/text_margin"
+                android:paddingEnd="@dimen/text_margin"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/to"/>
+
+            <TextView
+                android:id="@+id/reports_date_end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/text_margin"
+                android:paddingEnd="@dimen/text_margin"
+                android:gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/reports_next_btn"
+                android:layout_width="24dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_arrow_right"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/reports_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:overlapAnchor="false"
+                android:popupBackground="@color/colorAmber100"
+                android:backgroundTint="@color/colorWhite"
+                style="@android:style/Widget.Holo.Light.Spinner"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reports_selected_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:layout_below="@id/reports_date_container"
+            android:text="@string/reports_select_chart"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/reports_selected_text"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingEnd="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin">
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/reports_pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,106 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+        <item name="actionBarItemBackground">@drawable/menu_item_bg</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog"/>
+
+
+    <!--Home information bar-->
+    <style name="HomeInfoAmount">
+        <item name="android:textSize">@dimen/text_title_money_size</item>
+        <item name="android:gravity">end</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:layout_marginTop">@dimen/text_margin</item>
+    </style>
+
+    <style name="HomeSubTitle">
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:paddingTop">@dimen/text_margin</item>
+        <item name="android:paddingBottom">@dimen/text_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingRight">@dimen/activity_vertical_margin</item>
+        <item name="android:background">@color/colorAmber400</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!--Account  information bar-->
+    <style name="AccountTitleText">
+        <item name="android:textSize">@dimen/text_desc_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="MoneyText">
+        <item name="android:textSize">@dimen/text_money_size</item>
+        <item name="android:layout_marginTop">@dimen/text_margin</item>
+    </style>
+
+    <style name="ListItemTitle">
+        <item name="android:paddingTop">@dimen/text_margin</item>
+        <item name="android:paddingBottom">@dimen/text_margin</item>
+        <item name="android:paddingStart">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingEnd">@dimen/activity_vertical_margin</item>
+        <item name="android:background">@color/colorAmber200</item>
+        <item name="android:textSize">@dimen/list_item_header_text_size</item>
+    </style>
+
+    <style name="ListItemText">
+        <item name="android:textSize">@dimen/list_item_text_size</item>
+    </style>
+
+    <style name="ListItemEditText">
+        <item name="android:textSize">@dimen/list_item_text_size</item>
+    </style>
+
+    <style name="FragmentHostTab">
+        <item name="android:background">@color/colorAmber400</item>
+        <item name="android:paddingTop">@dimen/text_margin</item>
+        <item name="android:paddingBottom">@dimen/text_margin</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="TransactionsListTopic">
+        <item name="android:textSize">@dimen/list_item_text_size</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:paddingLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="TextInputContainer">
+        <item name="android:layout_height">64dp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingRight">@dimen/activity_vertical_margin</item>
+        <item name="android:background">@drawable/list_item_border</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="image_stretch">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+</resources>
+

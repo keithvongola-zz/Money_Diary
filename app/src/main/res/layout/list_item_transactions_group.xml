@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transactions_group"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAmber200">
+
+    <LinearLayout
+        android:id="@+id/transactions_group_date_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:minWidth="50dp"
+        android:gravity="start|center_vertical">
+
+        <TextView
+            android:id="@+id/transactions_group_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingEnd="0dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/transactions_group_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/activity_vertical_margin"
+            android:paddingEnd="0dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transactions_group_inexp_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp">
+
+        <TextView
+            android:id="@+id/transactions_group_income"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/text_margin" />
+
+        <TextView
+            android:id="@+id/transactions_group_expense"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/colorRed"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/text_margin"
+            android:paddingBottom="@dimen/text_margin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transactions_group_balance_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingStart="0dp"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/toolbar_info_balance"
+            android:textSize="8sp"
+            android:gravity="end" />
+
+        <TextView
+            android:id="@+id/transactions_group_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+</LinearLayout>

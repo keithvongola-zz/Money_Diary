@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "939459692993",
+    "firebase_url": "https://moneydiary-b1afb.firebaseio.com",
+    "project_id": "moneydiary-b1afb",
+    "storage_bucket": "moneydiary-b1afb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939459692993:android:93dc22a878715754",
+        "android_client_info": {
+          "package_name": "com.keithvongola.android.moneydiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939459692993-ul2t6oumujjasblln0eb4c9km2j3jb16.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.keithvongola.android.moneydiary",
+            "certificate_hash": "b75c4dcb28eeb902682b98ad57f6263b1adf06fb"
+          }
+        },
+        {
+          "client_id": "939459692993-spsgbg1v5cqn101h7b9ohtg1ntue603k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAi3mNyas7Hod5bA2X7JI_U-FG9tEFi_R0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939459692993-spsgbg1v5cqn101h7b9ohtg1ntue603k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

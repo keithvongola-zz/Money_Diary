@@ -1,0 +1,54 @@
+<com.aspsine.swipetoloadlayout.SwipeToLoadLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeToLoadLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:swipe_style="classic">
+
+        <com.keithvongola.android.moneydiary.views.RefreshHeaderView
+            android:id="@id/swipe_refresh_header"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="100dp" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/swipe_target"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                        <include
+                            layout="@layout/toolbar_transactions_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <ExpandableListView
+                            android:id="@+id/exp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/empty_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="48dp"
+                            android:gravity="center"
+                            android:text="@string/pw_empty_record"/>
+                </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <com.keithvongola.android.moneydiary.views.LoadMoreFooterView
+            android:id="@id/swipe_load_more_footer"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="100dp" />
+
+    </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
+
+
+

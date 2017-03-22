@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_ex_rate_edit"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/TextInputContainer">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/exchange_rate_manual"
+            android:gravity="center_vertical|start"
+            style="@style/ListItemText" />
+
+        <Switch
+            android:id="@+id/manual_exchange_rate_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/exchange_rate_et_container"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        style="@style/TextInputContainer">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ListItemText"
+            android:text="@string/edit_exchange_rate" />
+
+        <EditText
+            android:id="@+id/exchange_rate_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|end"
+            android:cursorVisible="false"
+            android:duplicateParentState="true"
+            android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
