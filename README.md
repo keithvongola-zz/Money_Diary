@@ -26,7 +26,6 @@
 <img src="https://github.com/keithvongola/Money_Diary/blob/master/screenshot/Screenshot_plans_01.png" height="420"><img src="https://github.com/keithvongola/Money_Diary/blob/master/screenshot/Screenshot_plans_02.png" height="420">
 * Plans tracking including balance amount, target amount, monthly contribution and saving terms.
 * Plans are breakdown into sub-plans for clear and easy management.
-* Sub-budget allows custom Name, Balance and icon.
 
 ## Records :
 <img src="https://github.com/keithvongola/Money_Diary/blob/master/screenshot/Screenshot_records_02.png" height="420"><img src="https://github.com/keithvongola/Money_Diary/blob/master/screenshot/Screenshot_records_01.png" height="420">
