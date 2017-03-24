@@ -25,7 +25,7 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_arrow_left"
                 android:background="@android:color/transparent"
-                android:contentDescription="@string/previous_period" />
+                android:contentDescription="@string/cd_previous_period" />
 
             <TextView
                 android:id="@+id/reports_date_start"
