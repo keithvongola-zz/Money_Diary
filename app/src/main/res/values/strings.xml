@@ -229,7 +229,9 @@
     <string name="cd_add_transfer">Add transfer.</string>
     <string name="cd_records_next">Next record.</string>
     <string name="cd_records_previous">Previous record.</string>
-
+    <string name="cd_next_period">Next Period</string>
+    <string name="cd_previous_period">Previous period.</string>
+    
     <!--Sample accounts-->
     <string name="account_cash">Cash</string>
     <string name="account_checking">Checking</string>
