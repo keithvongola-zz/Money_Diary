@@ -133,6 +133,7 @@
     <string name="toast_transaction_amount_zero">Amount must be greater than zero.</string>
     <string name="toast_transaction_empty_category">Please select a Sub-Category.</string>
     <string name="toast_transaction_empty_account">Please add an account for transaction.</string>
+    <string name="transactions_empty_balance">Balance change cannot be edited.</string>
 
     <!--Records Page-->
     <string name="title_records">Records</string>

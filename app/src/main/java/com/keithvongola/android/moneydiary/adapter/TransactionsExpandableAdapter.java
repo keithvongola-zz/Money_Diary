@@ -102,7 +102,7 @@ public class TransactionsExpandableAdapter extends BackableExpandableListAdapter
 
     @Override
     public int getGroupCount() {
-            return groups.length;
+        return groups.length;
     }
 
     @Override
@@ -113,7 +113,7 @@ public class TransactionsExpandableAdapter extends BackableExpandableListAdapter
 
     public boolean isGroupsEmpty() {
         for(int i=0; i<getGroupCount(); i++){
-            if(getChildrenCount(i)>0) return false;
+            if (getChildrenCount(i) > 0) return false;
         }
         return true;
     }
@@ -279,7 +279,7 @@ public class TransactionsExpandableAdapter extends BackableExpandableListAdapter
                 switch (transaction.getType()){
                     case 0:
                         if (transaction.getSubBudgetID() == 2) // this is a balance change
-                            Toast.makeText(mContext, "Balance change cannot be edited.", Toast.LENGTH_LONG).show();
+                            Toast.makeText(mContext, R.string.transactions_empty_balance, Toast.LENGTH_LONG).show();
                         else fragmentClass = ExpenseEditFragment.class;
                         break;
                     case 1:

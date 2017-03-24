@@ -3,13 +3,13 @@ package com.keithvongola.android.moneydiary.databases;
 import android.content.Context;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.keithvongola.android.moneydiary.R;
 import com.keithvongola.android.moneydiary.databases.MoneyContract.PlansEntry;
 import com.keithvongola.android.moneydiary.databases.MoneyContract.SubPlansEntry;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -53,15 +53,17 @@ public class MoneyDBHelper extends SQLiteOpenHelper {
      */
     private boolean checkDataBase(){
         SQLiteDatabase checkDB = null;
-        try{
-            String myPath = DB_PATH + DB_NAME;
-            checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
-        }catch(SQLiteException e){
-        }
-        if(checkDB != null){
-            checkDB.close();
-        }
-        return checkDB != null;
+        File databasePath = context.getDatabasePath(DB_NAME);
+        return databasePath.exists();
+//        try{
+//            String myPath = DB_PATH + DB_NAME;
+//            checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
+//        }catch(SQLiteException e){
+//        }
+//        if(checkDB != null){
+//            checkDB.close();
+//        }
+//        return checkDB != null;
     }
 
     private void copyDataBase() throws IOException{
@@ -90,7 +92,7 @@ public class MoneyDBHelper extends SQLiteOpenHelper {
      * */
     public void createDataBase() throws IOException{
         boolean dbExist = checkDataBase();
-        if(!dbExist) {
+        if (!dbExist) {
             SQLiteDatabase db = this.getReadableDatabase();
             try {
                 copyDataBase();

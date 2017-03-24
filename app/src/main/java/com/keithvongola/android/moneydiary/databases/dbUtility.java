@@ -407,7 +407,7 @@ public class dbUtility {
 
                         + " WHERE " + " date(datetime(" + TransactionEntry.TABLE_NAME + "." + TransactionEntry.COLUMN_TRANSACTION_DATE + "/1000 , 'unixepoch')) >= date('" + currentYear + "-01-01" + "')"
                         + " AND date(datetime(" + TransactionEntry.TABLE_NAME + "." + TransactionEntry.COLUMN_TRANSACTION_DATE + "/1000 , 'unixepoch')) < date('" + currentYear + "-12-31" + "')"
-                        + " AND " + TransactionEntry.TABLE_NAME + "." + TransactionEntry.COLUMN_TRANSACTION_SUB_CAT + " > 2 "
+                        + " AND " + TransactionEntry.TABLE_NAME + "." + TransactionEntry.COLUMN_TRANSACTION_MAIN_CAT + " > 1 "
                         + " GROUP BY " + "TYPE, CURRENCY, DATE"
                         + " ORDER BY " + "DATE ASC";
         return sTransactionByMonthAndType;

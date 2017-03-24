@@ -181,6 +181,6 @@ public class Account implements Parcelable {
      * @return the total balance of this {@code Account}, never {@code null}
      */
     public MonetaryAmount getTotal(){
-        return saving.add(current);
+        return saving.negate().add(current);
     }
 }

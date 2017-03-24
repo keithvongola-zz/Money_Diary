@@ -77,7 +77,7 @@ public class Utility {
 
     private static DecimalFormat decimalFormatter = new DecimalFormat("#,###.###");
     private static final String DATE_FORMAT = "dd-MM-yyyy";
-    private static final String DATE_FORMAT_ISO8601 = "dd-MM-yyyy XXX";
+    private static final String DATE_FORMAT_ISO8601 = "dd-MM-yyyy Z";
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat(DATE_FORMAT, Locale.ENGLISH);
     private static final SimpleDateFormat dateFormatIso = new SimpleDateFormat(DATE_FORMAT_ISO8601, Locale.ENGLISH);
 

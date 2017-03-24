@@ -49,10 +49,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Stetho.initializeWithDefaults(this);
-
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        Stetho.initializeWithDefaults(this);
+
         fragmentManager = getSupportFragmentManager();
         fragmentManager.addOnBackStackChangedListener(this);
         setSupportActionBar(toolbar);

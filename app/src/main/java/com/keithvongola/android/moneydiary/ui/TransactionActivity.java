@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 
 import com.keithvongola.android.moneydiary.R;
 
@@ -24,9 +25,13 @@ public class TransactionActivity extends AppCompatActivity {
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(R.string.transactions_new);
+
         if (savedInstanceState == null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeButtonEnabled(true);
+
             TransactionFragment fragment = new TransactionFragment();
-            int position = getIntent().getExtras()==null ? 0 : getIntent().getExtras().getInt(ARG_PAGE) ;
+            int position = getIntent().getExtras() == null ? 0 : getIntent().getExtras().getInt(ARG_PAGE) ;
 
             Bundle arg = new Bundle();
             arg.putInt(ARG_PAGE,position);
@@ -36,6 +41,17 @@ public class TransactionActivity extends AppCompatActivity {
                     .replace(R.id.content_transaction_container, fragment, FRAG_TAG_TF)
                     .commit();
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            // Respond to the action bar's Up/Home button
+            case android.R.id.home:
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

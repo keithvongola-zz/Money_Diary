@@ -2,7 +2,6 @@ package com.keithvongola.android.moneydiary.ui;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.DatabaseUtils;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -209,7 +208,6 @@ public class MainFragment extends Fragment implements LoaderManager.LoaderCallba
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
         switch (loader.getId()) {
             case TRANSACTIONS_LOADER:
-                DatabaseUtils.dumpCursor(data);
                 setLineChartData(data);
                 MonetaryAmount currentMonthIncome = Money.of(new BigDecimal(String.valueOf(dataSets.get(0).getEntriesForXValue(currentMonth-1).get(0).getY())),
                         getMainCurrency(getActivity()));

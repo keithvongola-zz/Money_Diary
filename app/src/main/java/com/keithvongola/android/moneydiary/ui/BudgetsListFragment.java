@@ -236,7 +236,7 @@ public class BudgetsListFragment extends Fragment implements LoaderCallbacks<Cur
             MonetaryAmount remain = isExpense ? totalBudget.add(budgetSpent) : budgetSpent.subtract(totalBudget);
 
             if (remain.signum() < 0)
-                remain = budgetSpent.subtract(remain);
+                remain = remain.subtract(remain);
             setAmountWithColor(getActivity(), tvBudgetRight, remain);
         } else {
             emptyView.setVisibility(View.VISIBLE);
