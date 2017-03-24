@@ -231,7 +231,8 @@
     <string name="cd_records_previous">Previous record.</string>
     <string name="cd_next_period">Next Period</string>
     <string name="cd_previous_period">Previous period.</string>
-    
+    <string name="cd_budget_icon">Budget icon.</string>
+
     <!--Sample accounts-->
     <string name="account_cash">Cash</string>
     <string name="account_checking">Checking</string>
