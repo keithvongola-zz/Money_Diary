@@ -25,7 +25,7 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/ic_arrow_left"
                 android:background="@android:color/transparent"
-                android:contentDescription="@string/cd_add_transfer" />
+                android:contentDescription="@string/previous_period" />
 
             <TextView
                 android:id="@+id/reports_date_start"
@@ -56,7 +56,8 @@
                 android:layout_gravity="center"
                 android:scaleType="fitCenter"
                 android:background="@android:color/transparent"
-                android:src="@drawable/ic_arrow_right"/>
+                android:src="@drawable/ic_arrow_right"
+                android:contentDescription="@string/cd_next_period" />
 
             <View
                 android:layout_width="0dp"
