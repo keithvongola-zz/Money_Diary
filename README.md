@@ -35,11 +35,11 @@
 
 ## Reports :
 <img src="https://github.com/keithvongola/Money_Diary/blob/master/screenshot/Screenshot_reports_01.png" height="420">
-* Reports in different periods(Weekly, Monthly, Yearly or custom range)
+* Reports in different periods(Weekly, Monthly, Yearly or custom range).
 
 ## Multiple Currency :
 <img src="https://github.com/keithvongola/Money_Diary/blob/master/screenshot/Screenshot_currency_01.png" height="420">
-* Support currency of ISO4217
+* Support currency of ISO4217.
 * Custom exchange rate for different currencies.
 
 ## Others :
